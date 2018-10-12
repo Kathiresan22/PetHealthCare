@@ -15,6 +15,14 @@
   		$('.modal').modal();
  });
  
+ $(document).ready(function(){
+    $('.tabs').tabs();
+	$('.dropdown-trigger').dropdown();
+	$(".dropdown-content>li>a").css("color", "#EF9A9A");
+  });
+  
+
+ 
  </script>
  
   <script>
@@ -26,7 +34,7 @@
 	  <style>
 	  
 	  body{
-  background:#EF9A9A;
+  /* background:#EF9A9A; */
 }
 
 a.btn{
@@ -36,6 +44,7 @@ a.btn{
  max-height:100%;
  
 }
+
 
 input[type="submit"]{
   width: 100%;
@@ -60,15 +69,183 @@ input[type="submit"]{
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Future Component 1</a></li>
-        <li><a href="badges.html">Future Component 2</a></li>
+        <li><a href="sass.html">Future Component 1</a></li>        
+		
+		<!-- Dropdown Structure -->
+		
+		<ul id="dropdown2" class="dropdown-content">
+			<li><a href="#!">Jimmy Jim<span class="badge">1</span></a></li>
+			<li><a href="#!">Tommy Tom<span class="new badge">1</span></a></li>
+			<li><a href="#!">Sapphire Sal</a></li>
+		</ul>
+		
+		<!-- Dropdown Trigger -->
+		<a class="btn dropdown-trigger" href="#!" data-target="dropdown2" style="background-color:#EF9A9A">Frankie Frank<i class="material-icons right">arrow_drop_down</i></a>
+		
         <li><a href="#login" class="modal-trigger">Add Pet</a></li>
       </ul>
     </div>
   </nav>
   
   
-  
+<div class="row">
+ <div class="col s12 m10">
+  <div class="card">
+	<div class="card-content">
+	  <span class="card-title">Frankie Frank</span>
+		
+		<table style="width:50%">
+			<tr> 
+				<td>  Breeders Name </td>
+				<td>  Lindsay </td>
+			</tr>
+			
+			<tr> 
+				<td>  Breeders Type </td>
+				<td>  Morkie </td>
+			</tr>
+			
+			<tr> 
+				<td>  Date of Birth </td>
+				<td>  Mar 20 2011 </td>
+			</tr>
+		</table>
+	
+      </div>
+		
+	<div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a href="#vetinfo">Vet Info</a></li>
+        <li class="tab"><a href="#visits">Visit</a></li>
+        <li class="tab"><a href="#vaccination"> Vaccinations</a></li>
+		<li class="tab"><a href="#medications"> Medications</a></li>
+		
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      
+	  <!-- Vet Informations are added here -->
+	  <div id="vetinfo">
+			
+		<table style="width:60%">
+			<tr> 
+				<td>  Vet Name </td>
+				<td>  Dr.Z </td>
+			</tr>
+			
+			<tr> 
+				<td>  Vet Contact Number </td>
+				<td>  (416)416-4164 </td>
+			</tr>
+			
+			<tr> 
+				<td>  Vet Email </td>
+				<td>  frankie@petcare.com </td>
+			</tr>
+			
+			<tr> <th colspan="2"> Vet Clinic Details </th> </tr>
+			
+			<tr> 
+				<td> Street </td> 
+				<td> 123 Street </td>
+			</tr>
+			
+			<tr>
+				<td> City </td>
+				<td> Toronto </td>
+			</tr>
+			
+			<tr>
+				<td> Country </td>
+				<td> Canada </td>
+			</tr>	
+			
+		</table>
+		
+	  </div>
+	  
+	  <!-- Visit informations are added here -->
+      <div id="visits">
+		<table style="width:100%">
+			<tr>
+				<th>Reason</th>
+				<th>Date</th>
+				<th>Weight</th>
+				<th>Weight Unit </th>
+				<th>Notes </th>				
+			</tr>
+			
+			<!-- Sample Data for Visit -->
+			
+			<tr>
+				<td>Soar Throat</td>
+				<td>August 18,2016</td>
+				<td>8</td>
+				<td>KG</td>
+				<td>Scount had a sore throat and was feeling uncomfortable</td>
+			</tr>
+			
+		</table>
+	  </div> <!-- End of Visit Informations -->
+	  
+	  <!-- Vaccination Informations -->
+      <div id="vaccination">
+		
+		<table style="width:100%">
+			<tr>
+				<th> Name </th>
+				<th> Dates </th>
+				<th> Notes </th>
+			<tr>
+			
+			<!--Sample Data for Vaccination -->
+			
+			<tr>
+				<td>Frankie</td>
+				<td>August 17,2016</td>
+				<td>He took this vaccination because of sore throat. It has to be taken 3 times with daily food  </td>				
+			</tr>
+			
+		</table>
+	  
+	  </div><!-- End of Vaccination Informations -->
+	  
+	  <!-- Medication Informations -->
+	  <div id="medications">
+		
+		<table style="width:100%">
+			<tr>
+				<th>Name</th>
+				<th>Date</th>
+				<th>Notes</th>				
+			</tr>
+			
+			<!--Sample Data for Medications -->
+			
+			<tr>
+				<td>Frankie</td>
+				<td>August 17,2016</td>
+				<td>NSAIDs. Nonsteroidal anti-inflammatory drugs</td>
+				
+			</tr>
+			
+		</table>
+	  </div>
+	  
+    </div>
+	
+	
+ 
+		
+	  
+    </div>
+  </div>
+  </div>
+ 
+ 
+ 
+
+ 
  
 
 <div id="login" class="modal ">
